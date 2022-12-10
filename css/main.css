@@ -1,0 +1,309 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My Styles */
+
+/* Default Styles */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px; /* 1em = 14px = 1rem */
+	line-height: 1.5;
+	color: black;
+}
+
+h1 {
+	font-size: 71px;
+	font-weight: bold;
+	line-height: 106px;
+	margin-bottom: 17px;
+}
+
+h2 {
+	font-size: 48px;
+	font-weight: bold;
+	margin-bottom: 12px;
+}
+
+h3 {
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+p {
+	margin-bottom: 14px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	padding: 1rem;
+	
+}
+
+/*Navigation Styles*/
+
+nav {
+	background-color: #222222;
+}
+
+nav a:link, nav a:visited {
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	color: #c78b07;
+	padding-top: 17px;
+	padding-bottom: 17px;
+	text-decoration: none;
+}
+
+nav li.current a:link,
+nav li.current a:visited {
+	background-color: #c78b07;
+	color: black;
+}
+
+.logo {
+	background-color: #c78b07;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+nav form .searchbar {
+	width: 590px;
+	padding: 10px;
+	font-size: 18px;
+}
+
+nav form button {
+	background-color: #222222;
+	border-radius: 1px;
+	border-color: #c78b07;
+	height: 45px;
+	width: 42px;
+	color: #c78b07;
+}
+
+/*Welcome Styles*/
+
+.header-welcome {
+	background-image: url(../images/main-banner.jpg);
+	background-size: cover;
+	color: white;
+	padding-top: 68px;
+	padding-bottom: 68px;
+}
+
+.header-welcome .container {
+	 background-color: rgba(0, 0, 0, 0.5);
+	 padding-top: 50px;
+}
+
+.header-welcome button {
+	background-color: #c78b07;
+	border: none;
+	width: 259px;
+	height: 96px;
+	font-size: 1.5em;
+}
+
+/*About Section*/
+
+.section-about h2 {
+	padding-top: 20px;
+}
+
+.section-about {
+	background-color: #ffe6ac;
+}
+
+/* Services */
+
+.section-services {
+	font-size: 0;
+}
+
+
+.section-services h2 {
+	margin-top: 36px;
+	margin-bottom: 12px;
+}
+
+.section-services img {
+	width: 680px;
+	height: auto;
+	margin-bottom: none;
+	padding: 0;
+}
+
+.section-services .services-digital, .services-marketing, .services-video, .services-web, .services-print {
+	display: inline-block;
+	background-color: #ffe6ac;
+	padding: 0;
+	font-size: 14px;
+	margin-bottom: 12px;
+}
+
+.services-digital h3, .services-digital p, .services-marketing h3, .services-marketing p, .services-video h3, .services-video p, .services-print h3, .services-print p, .services-web h3, .services-web p {
+	margin: 12px;
+}
+
+.services-digital button, .services-marketing button, .services-video button, .services-web button, .services-print button{
+	background-color: #222222;
+	color: white;
+	padding: 28px;
+	font-size: 1.5em;
+	margin-left: 12px;
+	margin-bottom: 12px;
+}
+
+.section-vision {
+	background-image: url(../images/vision.jpg);
+	color:white;
+	background-position-y: -90px;
+	background-size: cover;
+
+}
+
+.section-vision button {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	border:1px solid;
+	border-color: #c78b07;
+	padding: 28px;
+	font-size: 1.5em;
+}
+
+.team-about-john, .team-about-bob {
+	display: inline-block;
+	background-color: #ffe6ac;
+	padding: 0;
+	font-size: 14px;
+	margin-bottom: 12px;
+}
+
+.team-about-john h4, .team-about-bob h4 {
+	margin: 12px;
+	border-bottom: solid;
+	border-color:#c78b07;
+	padding-top: -20px;
+	font-weight: bold;
+}
+
+.team-about-john h3, .team-about-john p, .team-about-bob h3, .team-about-bob p {
+	margin: 12px;
+}
+
+.team-about-john h3, .team-about-bob h3 {
+	padding-top: 12px;
+	margin-bottom: -12px;
+}
+
+.section-team img {
+	width: 680px;
+	height: auto;
+	margin-bottom: -10px;
+	padding: 0;
+}
+
+.section-contact input {
+	width: 100%;
+}
+.section-contact textarea {
+	width: 100%;
+	height: 90px;
+	resize: none;
+}
+
+.section-contact button {
+	background-color: #222222;
+	color:#c78b07;
+	margin-top: 12px;
+	font-size: larger;
+}
+
+.contact-hours, th, td{
+	border: 1px solid;
+}
+.contact-hours {
+	width: 100%;
+	margin-bottom: 12px;
+}
+
+.contact-hours th {
+	background-color:#ffe6ac;
+}
+
+.contact-hours th, td{
+	padding: 14px;
+}
+
+footer {
+	background-color: #222222;
+	color:#c78b07;
+}
+
+footer .container{
+	padding-top: 30px;
+	padding-bottom: 1px;
+}
+
+
+
+
+
+
+
+
+
+
