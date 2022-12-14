@@ -182,7 +182,7 @@ nav form button {
 .section-services img {
 	width: 680px;
 	height: auto;
-	margin-bottom: none;
+	
 	padding: 0;
 }
 
@@ -298,7 +298,257 @@ footer .container{
 	padding-bottom: 1px;
 }
 
+/* END OF YOUR MOBILE-FIRST CSS. 
+NO MEDIA QUERIES ABOVE THIS LINE */
 
+/* TABLET STYLES: 760px to 1199px */
+@media screen and (min-width: 760px) {
+
+    .container {
+        width: 706px;
+        margin: 0 auto;
+    }
+    /* NOTHING ELSE! */ 
+}
+
+/* DESKTOP STYLES: ABOVE 1200px */
+@media screen and (min-width: 1200px) {
+
+    .container {
+        width: 1168px;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+
+    /* ALL YOUR DESKTOP STYLES HERE */
+
+	p{
+		font-size: 16px;
+	}
+
+	/* nav area */
+
+	nav .container{
+		display: flex;
+	}
+
+	.logo{
+		background-color: #222222;
+		height: 100px;
+		width: 100px;
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+
+	ul{
+		padding-left: 60px;
+	}
+
+	li{
+		display:inline-block;
+		height: 60px;
+		width: 140px;
+		padding-top: 55px;
+	}
+
+	nav .container .searchbar{
+		position: relative;
+		width: 240px;
+		margin-top: 63px;
+	}
+
+	/* header area*/
+
+	.header-welcome button{
+		margin-bottom: 12px;
+	}
+
+	.header-welcome h1{
+		font-size: 85px;
+	}
+
+	/* about us area */
+
+	.section-about .about-grid{
+		display: grid;
+		grid-template-areas: "a b";
+		gap: 20px;
+	}
+
+	.section-about .about-grid-a{
+		grid-area: a;
+		width: 580px;
+	}
+
+	.section-about .container img {
+		
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.section-about .about-grid-b{
+		grid-area: b;
+		grid-row-gap: 20px;
+	}
+
+	.section-about p {
+		margin-top: 20px;
+		padding-right: 10px;
+	}
+
+	/*services area*/
+
+	.section-services .services-grid{
+		display: grid;
+		grid-template-areas:
+		"a a a b b b"
+		"a a a b b b"
+		"a a a b b b"
+		"c c d d e e"
+		"c c d d e e"
+		"c c d d e e";
+		column-gap: 16px;
+	}
+
+	.section-services .services-grid-a{
+		grid-area: a;
+		width: 580px;
+		height:712px;
+	}
+
+	.services-grid-a button{
+		width: 550px;
+	}
+	.services-grid-a h3{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.services-grid-a img{
+		height: 395px;
+	}
+
+	.section-services .services-grid-b{
+		grid-area: b;
+		width: 580px;
+		height: 712px;
+	}
+
+	.services-grid-b button{
+		width: 550px;
+	}
+
+	.services-grid-b h3{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.services-grid-b img{
+		height: 395px;
+	}
+
+	.section-services .services-grid-c{
+		grid-area: c;
+		width: 380px;
+		height: 625px;
+	}
+
+	.services-grid-c button{
+		width: 355px;
+	}
+	.section-services .services-grid-d{
+		grid-area: d;
+		width: 380px;
+		height: 625px;
+	}
+
+	.services-grid-d button{
+		width: 355px;
+	}
+
+	.section-services .services-grid-e{
+		grid-area: e;
+		width: 380px;
+		height: 625px;
+	}
+
+	.services-grid-e button{
+		width: 355px;
+	}
+
+	/* vision area */
+
+	.section-vision{
+		display: block;
+		height: 280px;
+		background-image: url(../images/vision.jpg);
+		background-position-y: -400px;
+		
+	}
+
+	.section-vision h3{
+		padding-top: 40px;
+	}
+
+	/* team area */
+
+	.team-flex{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.team-flex img{
+		width: 583px;
+		height: 413px;
+		margin: 0px;
+	}
+
+	.team-about-john{
+		width: 582px;
+		height: 413px;
+		margin: 0px;
+	}
+
+	.team-about-bob{
+		width: 582px;
+		height: 413px;
+		margin-top: -5px;
+	}
+
+	.team-bob {
+		order: 3;
+		margin-top: -5px;
+		
+	}
+
+	/*contact area */
+
+	.section-contact .contact-grid{
+		display: grid;
+		grid-template-areas: 
+		"a a a c c c"
+		"a a a c c c"
+		"b b b b b b"
+		"b b b b b b";
+		gap: 20px;
+	}	
+
+	.contact-grid-a{
+		grid-area: a;
+		max-width: 550px;
+	}
+
+	.contact-grid-c{
+		grid-area: c;
+	}
+
+	.contact-area-b{
+		grid-area: b;
+		width: 1200px;
+		
+	}
+
+}
 
 
 
